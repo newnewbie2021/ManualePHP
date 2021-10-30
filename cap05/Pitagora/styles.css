@@ -1,0 +1,28 @@
+#tabella {
+  background-color: white;
+  border: 2px solid black;
+  border-collapse: collapse;
+  display: inline-block;
+}
+#tabella td, #tabella th {
+  padding: 2px 6px;
+  border: 1px solid gray;
+  text-align: center;
+}
+img {
+  margin-right: 10px;
+  height: 100%;
+}
+.image {
+  position: relative;
+  font-size: 0;
+  display: inline-block;
+}
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 12pt;
+  color: white;
+  text-shadow: 0 0 4px red;
+}

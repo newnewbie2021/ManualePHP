@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Scacchiera</title>
+</head>
+<body>
+  <svg width="400" height="400">
+    <?php
+    $squares = 8;  // Numero di case per riga
+    $size = 50;  // Dimensione delle case in pixel
+
+    for ($i = 0; $i < $squares; $i++) {
+      for ($j = 0; $j < $squares; $j++) {
+        $x = $i * $size;  // Posizione orizzontale della casa
+        $y = $j * $size;  // Posizione verticale della casa
+
+        if (($i + $j) % 2 == 0) {
+          $color = 'white';  // Se in posizione pari
+        } else {
+          $color = 'black';  // Se in posizione dispari
+        }
+        echo "<rect x='$x' y='$y' height='$size' width='$size' 
+                    style='fill:$color;'></rect>";
+      }
+    }
+    ?>
+    <rect x="0" y="0" height="400" width="400"
+          style="fill:transparent; stroke-width:2px; stroke:black;"></rect>
+  </svg>
+</body>
+</html>
+
+
+

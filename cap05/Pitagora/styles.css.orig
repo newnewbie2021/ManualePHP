@@ -1,0 +1,47 @@
+#tabella {
+  border: 2px solid black;
+  border-collapse: collapse;
+  display: inline-block;
+  overflow: hidden;
+}
+#tabella td, #tabella th {
+  padding: 2px 6px;
+  border: 1px solid gray;
+  text-align: center;
+  position: relative;
+}
+#tabella td:hover {
+  background-color: palegreen;
+  cursor: none;
+}
+#tabella tr:hover {
+  background-color: lightcyan;
+}
+#tabella td:hover::after, #tabella th:hover::after {
+  content: "";
+  position: absolute;
+  background-color: #ffa;
+  left: 0;
+  top: -500px;
+  height: 1000px;
+  width: 100%;
+  z-index: -1;
+}
+
+img {
+  margin-right: 10px;
+  height: 100%;
+}
+.image {
+  position: relative;
+  font-size: 0;
+  display: inline-block;
+}
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 12pt;
+  color: white;
+  text-shadow: 0 0 4px black;
+}
